@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">
+        <h2 class="filter">Filtrer</h2>
+        <form [formGroup]="sliderForm" class="filter-form" (ngSubmit)="onSubmit()">
+          <div class="custom-slider mb-3">
+          <ngx-slider [options]="options" formControlName="sliderControl"></ngx-slider>
+          </div>
+          <select class="form-select mb-3" aria-label="select-order">
+            <option selected>Prix croissant</option>
+            <option value="1">Prix décroissant</option>
+            <option value="2">Alphabétique</option>
+            <option value="3">Alphabétique Z->A</option>
+          </select>
+          <div class="jam-checkbox mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="intense">
+            <label class="form-check-label" for="intense">
+              Intense
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="confiture">
+            <label class="form-check-label" for="confiture">
+              Confiture
+            </label>
+          </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="gelée">
+            <label class="form-check-label" for="gelée">
+              Gelée
+            </label>
+            </div>
+              <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="fruit-rouge">
+            <label class="form-check-label" for="fruit-rouge">
+              Fruit rouges
+            </label>
+              </div>
+          </div>
+          <button class="btn btn-outline-primary" type="submit">Filtrer</button>
+        </form>
+      </div>
+    </div>
+    <div class="col py-3">
+      <div class="row">
+        <div *ngFor="let jam of jams" class="card col-md-auto mx-auto my-5 shadow" style="width: 18rem;">
+          <img src="./assets/images/{{jam.image}}" class="card-img-top rounded mx-auto d-block mt-1" alt="{{jam.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{jam.name}}</h5>
+            <p class="card-text">{{(jam.price/100)| currency: 'EUR': 'symbol'}}</p>
+            <p class="card-text">{{jam.description}}</p>
+            <input type="number" [defaultValue]="1" class="mb-3"/>
+            <a href="#" class="btn btn-dark">Ajouter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
