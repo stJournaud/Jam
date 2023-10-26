@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'checkout', component: CheckoutComponent},
   { path: 'login', component: LoginComponent},
-  { path: 'register', component: RegistrationComponent}
+  { path: 'register', component: RegistrationComponent},
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
