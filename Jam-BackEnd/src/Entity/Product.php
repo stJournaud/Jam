@@ -2,12 +2,17 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Odm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Metadata\ApiFilter;
 use App\Repository\ProductRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: ProductRepository::class)]
+#[ApiResource]
 class Product
 {
     #[ORM\Id]
@@ -16,20 +21,25 @@ class Product
     private $id;
 
     #[ORM\Column(type: 'string', length: 255)]
+    #[Assert\NotBlank]
     private $name;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    #[Assert\NotBlank]
     private $description;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
+    #[Assert\Image]
     private $image;
 
     #[ORM\Column(type: 'integer')]
+    #[Assert\NotBlank]
     private $price;
 
     private int $quantity=0;
 
     #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'products')]
+    #[Assert\NotBlank]
     private $categories;
 
     public function __construct()

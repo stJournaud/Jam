@@ -2,10 +2,13 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\LineOrderRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: LineOrderRepository::class)]
+#[ApiResource]
 class LineOrder
 {
     #[ORM\Id]
@@ -14,17 +17,21 @@ class LineOrder
     private $id;
 
     #[ORM\Column(type: 'integer')]
+    #[Assert\NotBlank]
     private $quantity;
 
     #[ORM\Column(type: 'float')]
+    #[Assert\NotBlank]
     private $subtotal;
 
     #[ORM\ManyToOne(targetEntity: Order::class, inversedBy: 'lineOrders')]
     #[ORM\JoinColumn(nullable: false)]
+    #[Assert\NotBlank]
     private $order_associated;
 
     #[ORM\ManyToOne(targetEntity: Product::class)]
     #[ORM\JoinColumn(nullable: false,onDelete:"CASCADE")]
+    #[Assert\NotBlank]
     private $product;
 
     public function getId(): ?int

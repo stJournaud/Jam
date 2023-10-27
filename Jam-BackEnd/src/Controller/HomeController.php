@@ -6,15 +6,17 @@ use App\Repository\ProductRepository;
 use App\Repository\CategoryRepository;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+#[AsController]
 class HomeController extends AbstractController
 {
 
     #[Route('/', name: 'home')]
-    public function index(Request $request, CategoryRepository $categoryRepo, SessionInterface $session, ProductRepository $productRepository): Response
+    public function index(Request $request, CategoryRepository $categoryRepo, SessionInterface $session, ProductRepository $productRepository): array
     {
 
         $filter = $request->get("filter");
@@ -35,13 +37,13 @@ class HomeController extends AbstractController
         $categoriesChoice = $request->get("category", []);
         $products = $productRepository->findAllByFilters($filter, $minChoice, $maxChoice, $categoriesChoice);
 
-        return $this->render('home/index.html.twig', [
+        return [
             "products" => $products,
             "categories" => $categories,
             "minRange" => $minRange,
             "maxRange" => $maxRange,
             "minChoice" => $minChoice,
             "maxChoice" => $maxChoice
-        ]);
+        ];
     }
 }

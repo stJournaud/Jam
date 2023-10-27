@@ -3,11 +3,11 @@
     <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
       <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">
         <h2 class="filter">Filtrer</h2>
-        <form [formGroup]="sliderForm" class="filter-form" (ngSubmit)="onSubmit()">
-          <div class="custom-slider mb-3">
+        <form [formGroup]="filterForm" class="filter-form">
+          <div class="mb-3">
           <ngx-slider [options]="options" formControlName="sliderControl"></ngx-slider>
           </div>
-          <select class="form-select mb-3" aria-label="select-order">
+          <select class="form-select mb-3" formControlName="selectControl" aria-label="select-order">
             <option selected>Prix croissant</option>
             <option value="1">Prix décroissant</option>
             <option value="2">Alphabétique</option>
@@ -15,25 +15,25 @@
           </select>
           <div class="jam-checkbox mb-3">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="intense">
+            <input class="form-check-input" formControlName="checkboxIntense" type="checkbox" value="" id="intense">
             <label class="form-check-label" for="intense">
               Intense
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="confiture">
+            <input class="form-check-input" formControlName="checkboxConfiture" type="checkbox" value="" id="confiture">
             <label class="form-check-label" for="confiture">
               Confiture
             </label>
           </div>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="gelée">
+            <input class="form-check-input" formControlName="checkboxGelee" type="checkbox" value="" id="gelée">
             <label class="form-check-label" for="gelée">
               Gelée
             </label>
             </div>
               <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="fruit-rouge">
+            <input class="form-check-input" formControlName="checkboxFruitRouge" type="checkbox" value="" id="fruit-rouge">
             <label class="form-check-label" for="fruit-rouge">
               Fruit rouges
             </label>
