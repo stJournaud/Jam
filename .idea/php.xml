@@ -154,6 +154,10 @@
       <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/api-platform/core" />
+      <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/Jam-BackEnd/vendor/webonyx/graphql-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

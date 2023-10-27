@@ -1,104 +1,65 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {Options} from "ngx-slider-v2";
+import {HomeService} from "./services/home.service";
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  jams = [
-    {
-      "id": 1,
-      "name": "Cerises",
-      "description": null,
-      "image": "cerises.jpeg",
-      "price": 390
-    },
-    {
-      "id": 2,
-      "name": "Myrtille",
-      "description": null,
-      "image": "myrtille.jpeg",
-      "price": 390
-    },
-    {
-      "id": 3,
-      "name": "Prune",
-      "description": null,
-      "image": "prune.jpeg",
-      "price": 310
-    },
-    {
-      "id": 4,
-      "name": "Figue",
-      "description": null,
-      "image": "figue.jpeg",
-      "price": 330
-    },
-    {
-      "id": 5,
-      "name": "Fraise",
-      "description": null,
-      "image": "fraise.jpeg",
-      "price": 370
-    },
-    {
-      "id": 6,
-      "name": "Framboise",
-      "description": null,
-      "image": "framboise.jpeg",
-      "price": 420
-    },
-    {
-      "id": 7,
-      "name": "Gelée Cassis",
-      "description": null,
-      "image": "gelee-cassis.jpeg",
-      "price": 370
-    },
-    {
-      "id": 8,
-      "name": "Gelée Coings",
-      "description": null,
-      "image": "gelee-coings.jpeg",
-      "price": 370
-    },
-    {
-      "id": 9,
-      "name": "Intense Abricot",
-      "description": null,
-      "image": "intense-abricot.jpeg",
-      "price": 470
-    },
-    {
-      "id": 10,
-      "name": "Intense Fraise",
-      "description": null,
-      "image": "intense-fraise.jpeg",
-      "price": 490
+  constructor(private homeService: HomeService) { }
+  jams:Product[] = [];
+  minValue :number = 0;
+  maxValue :number = 0;
+  ngOnInit(): void {
+      this.GetAllProducts()
+      this.homeService.getAllProducts().subscribe(res => {
+          this.jams = res;
+          this.minValue = this.getMin(res);
+          this.maxValue = this.getMax(res);
+          this.filterForm.patchValue({
+            min: this.getMin(res),
+            max: this.getMax(res)
+          });
+          const newOptions: Options = Object.assign({}, this.options);
+          newOptions.floor = this.minValue/100;
+          newOptions.ceil = this.maxValue/100;
+          this.options = newOptions;
+
+      })
     }
-  ];
-  minProductPrice = this.jams.filter(j => j.price).reduce((min, j) => Math.min(min, j.price), Infinity);
-  maxProductPrice = this.jams.filter(j => j.price).reduce((max, j) => Math.max(max, j.price), 0);
-  someRange = [this.minProductPrice , this.maxProductPrice];
 
-  sliderForm: FormGroup = new FormGroup({
-    sliderControl: new FormControl([this.minProductPrice/100, this.maxProductPrice/100])
-  });
-  options: Options = {
-    floor: this.minProductPrice/100,
-    ceil: this.maxProductPrice/100,
-    step: 0.1
-  };
+    private getMax(jams: Product[]) {
+      return Math.max(...jams.map(jam => jam.price));
+    }
 
-  resetForm(): void {
-    this.sliderForm.reset({sliderControl: [20, 80]});
-  }
+    private getMin(jams: Product[]) {
+      return Math.min(...jams.map(j => j.price));
+    }
 
-  onSubmit(): void {
-    console.log(this.sliderForm.value);
-  }
+    private GetAllProducts() {
+      this.homeService.getAllProducts().subscribe((data: Product[]) => {
+        this.jams = data;
+      })
+    }
+
+    filterForm: FormGroup = new FormGroup({
+      sliderControl: new FormControl([this.minValue/100, this.maxValue/100]),
+      checkboxIntense: new FormControl(),
+      checkboxConfiture: new FormControl(),
+      checkboxGelee: new FormControl(),
+      checkboxFruitRouge: new FormControl(),
+      selectControl: new FormControl(),
+
+    });
+    options: Options = {
+      floor: 0,
+      ceil: 10,
+      step: 0.1
+    };
 }
+
