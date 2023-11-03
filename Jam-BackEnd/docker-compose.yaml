@@ -1,0 +1,42 @@
+version: '3'
+
+networks:
+    lan:
+
+services:
+    web:
+        build:
+            context: .
+        networks:
+            - lan
+        ports:
+            - '8080:80'
+        volumes:
+            - ./:/var/www/html
+        links:
+            - db
+            - mailer
+    db:
+        image: mysql:8.2.0
+        restart: always
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_USER=app
+            - MYSQL_PASSWORD=app
+            - MYSQL_DATABASE=shop
+        ports:
+            - '3306:3306'
+        volumes:
+            - db:/var/lib/mysql
+        networks:
+            - lan
+
+    mailer:
+        image: helder/mailcatcher
+        networks:
+            - lan
+        ports:
+            - '8081:80'
+volumes:
+    db:
+        driver: local

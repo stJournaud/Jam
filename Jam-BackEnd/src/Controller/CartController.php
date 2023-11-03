@@ -7,6 +7,7 @@ use App\Repository\ProductRepository;
 use App\Service\Cart;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -15,7 +16,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CartController extends AbstractController
 {
     #[Route('/cart', name: 'cart')]
-    public function index(Cart $cartSession, ProductRepository $productRepo, SessionInterface $session): Response
+    public function index(Cart $cartSession, ProductRepository $productRepo, SessionInterface $session): JsonResponse
     {
         $cart = [];
         foreach ($cartSession->getCart() as $id => $quantity) {
@@ -23,9 +24,8 @@ class CartController extends AbstractController
                 $cart[] =  ($productRepo->find($id))->setQuantity($quantity);
             }
         }
-        return $this->render('cart/index.html.twig', [
-            'cart' => $cart,
-        ]);
+
+        return new JsonResponse(["code" => 200, 'cart' => $cart]);
     }
 
     #[Route('/addCart/{id}', name: 'addCart')]
@@ -38,7 +38,7 @@ class CartController extends AbstractController
     }
 
     #[Route('/cartsize', name: 'cartsize')]
-    public function getCartSize(SessionInterface $session): Response
+    public function getCartSize(SessionInterface $session): JsonResponse
     {
         $totalQuantity = 0;
         foreach ($session->get("cart", []) as $id => $quantity) {
@@ -46,7 +46,7 @@ class CartController extends AbstractController
                 $totalQuantity+=$quantity;
           }
         }
-        return new Response($totalQuantity);
+        return new JsonResponse($totalQuantity);
     }
 
   
