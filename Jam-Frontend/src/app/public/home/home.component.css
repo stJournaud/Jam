@@ -1,0 +1,13 @@
+.sidebar {
+    border-right: solid;
+  }
+  
+  .filter-form {
+    width : 100%;
+  }
+  
+  .card-img-top {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  

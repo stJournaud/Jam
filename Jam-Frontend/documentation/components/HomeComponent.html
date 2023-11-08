@@ -1,0 +1,1071 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>jam-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">jam-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/public/home/home.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cartProducts" >cartProducts</a>
+                            </li>
+                            <li>
+                                <a href="#filterForm" >filterForm</a>
+                            </li>
+                            <li>
+                                <a href="#jams" >jams</a>
+                            </li>
+                            <li>
+                                <a href="#maxValue" >maxValue</a>
+                            </li>
+                            <li>
+                                <a href="#minValue" >minValue</a>
+                            </li>
+                            <li>
+                                <a href="#options" >options</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addToCart" >addToCart</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#GetAllProducts" >GetAllProducts</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getMax" >getMax</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getMin" >getMin</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#saveCart" >saveCart</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(homeService: <a href="../injectables/HomeService.html" target="_self">HomeService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/public/home/home.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>homeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/HomeService.html" target="_self" >HomeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addToCart"></a>
+                    <span class="name">
+                        <span ><b>addToCart</b></span>
+                        <a href="#addToCart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addToCart(addedProduct: <a href="../classes/Product.html" target="_self">Product</a>, quantity: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="70"
+                                    class="link-to-prism">src/app/public/home/home.component.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>addedProduct</td>
+                                            <td>
+                                                            <code><a href="../classes/Product.html" target="_self" >Product</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                                <td>quantity</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetAllProducts"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>GetAllProducts</b></span>
+                        <a href="#GetAllProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>GetAllProducts()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="45"
+                                    class="link-to-prism">src/app/public/home/home.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMax"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>getMax</b></span>
+                        <a href="#getMax"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMax(jams: <a href="../classes/Product.html" target="_self">Product[]</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="37"
+                                    class="link-to-prism">src/app/public/home/home.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>jams</td>
+                                            <td>
+                                                            <code><a href="../classes/Product.html" target="_self" >Product[]</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMin"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>getMin</b></span>
+                        <a href="#getMin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMin(jams: <a href="../classes/Product.html" target="_self">Product[]</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="41"
+                                    class="link-to-prism">src/app/public/home/home.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>jams</td>
+                                            <td>
+                                                            <code><a href="../classes/Product.html" target="_self" >Product[]</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="19"
+                                    class="link-to-prism">src/app/public/home/home.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveCart"></a>
+                    <span class="name">
+                        <span ><b>saveCart</b></span>
+                        <a href="#saveCart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveCart()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="66"
+                                    class="link-to-prism">src/app/public/home/home.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cartProducts"></a>
+                    <span class="name">
+                        <span ><b>cartProducts</b></span>
+                        <a href="#cartProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Product.html" target="_self" >Product[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/public/home/home.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterForm"></a>
+                    <span class="name">
+                        <span ><b>filterForm</b></span>
+                        <a href="#filterForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FormGroup({
+      sliderControl: new FormControl([this.minValue/100, this.maxValue/100]),
+      checkboxIntense: new FormControl(),
+      checkboxConfiture: new FormControl(),
+      checkboxGelee: new FormControl(),
+      checkboxFruitRouge: new FormControl(),
+      selectControl: new FormControl(),
+
+    })</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/public/home/home.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jams"></a>
+                    <span class="name">
+                        <span ><b>jams</b></span>
+                        <a href="#jams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Product.html" target="_self" >Product[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/public/home/home.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxValue"></a>
+                    <span class="name">
+                        <span ><b>maxValue</b></span>
+                        <a href="#maxValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/public/home/home.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="minValue"></a>
+                    <span class="name">
+                        <span ><b>minValue</b></span>
+                        <a href="#minValue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/public/home/home.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="options"></a>
+                    <span class="name">
+                        <span ><b>options</b></span>
+                        <a href="#options"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Options</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+      floor: 0,
+      ceil: 10,
+      step: 0.1
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/public/home/home.component.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { FormGroup, FormControl } from &#x27;@angular/forms&#x27;;
+import { Options } from &#x27;ngx-slider-v2&#x27;;
+import { Product } from &#x27;src/app/models/product.model&#x27;;
+import { HomeService } from &#x27;./services/home.service&#x27;;
+
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.css&#x27;]
+})
+export class HomeComponent {
+  constructor(private homeService: HomeService) { }
+  jams:Product[] &#x3D; [];
+  cartProducts:Product[] &#x3D; [];
+  minValue :number &#x3D; 0;
+  maxValue :number &#x3D; 0;
+
+  ngOnInit(): void {
+      this.GetAllProducts()
+      this.homeService.getAllProducts().subscribe(res &#x3D;&gt; {
+          this.jams &#x3D; res;
+          this.minValue &#x3D; this.getMin(res);
+          this.maxValue &#x3D; this.getMax(res);
+          this.filterForm.patchValue({
+            min: this.getMin(res),
+            max: this.getMax(res)
+          });
+          const newOptions: Options &#x3D; Object.assign({}, this.options);
+          newOptions.floor &#x3D; this.minValue/100;
+          newOptions.ceil &#x3D; this.maxValue/100;
+          this.options &#x3D; newOptions;
+
+      })
+    }
+
+    private getMax(jams: Product[]) {
+      return Math.max(...jams.map(jam &#x3D;&gt; jam.price));
+    }
+
+    private getMin(jams: Product[]) {
+      return Math.min(...jams.map(j &#x3D;&gt; j.price));
+    }
+
+    private GetAllProducts() {
+      this.homeService.getAllProducts().subscribe((data: Product[]) &#x3D;&gt; {
+        this.jams &#x3D; data;
+      })
+    }
+
+    filterForm: FormGroup &#x3D; new FormGroup({
+      sliderControl: new FormControl([this.minValue/100, this.maxValue/100]),
+      checkboxIntense: new FormControl(),
+      checkboxConfiture: new FormControl(),
+      checkboxGelee: new FormControl(),
+      checkboxFruitRouge: new FormControl(),
+      selectControl: new FormControl(),
+
+    });
+    options: Options &#x3D; {
+      floor: 0,
+      ceil: 10,
+      step: 0.1
+    };
+
+    saveCart() {
+      localStorage.setItem(&#x27;cart&#x27;, JSON.stringify(this.cartProducts));
+    }
+
+    addToCart(addedProduct: Product, quantity: string){
+      addedProduct.quantity &#x3D; parseInt(quantity); 
+      if(!localStorage.getItem(&#x27;user&#x27;)) {
+        this.homeService.localAddToCart(addedProduct);
+      }
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container-fluid&quot;&gt;
+    &lt;div class&#x3D;&quot;row flex-nowrap&quot;&gt;
+      &lt;div class&#x3D;&quot;col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100&quot;&gt;
+          &lt;h3 class&#x3D;&quot;filter&quot;&gt;Filtrer&lt;/h3&gt;
+          &lt;form [formGroup]&#x3D;&quot;filterForm&quot; class&#x3D;&quot;filter-form&quot;&gt;
+            &lt;div class&#x3D;&quot;mb-3&quot;&gt;
+            &lt;ngx-slider [options]&#x3D;&quot;options&quot; formControlName&#x3D;&quot;sliderControl&quot;&gt;&lt;/ngx-slider&gt;
+            &lt;/div&gt;
+            &lt;select class&#x3D;&quot;form-select mb-3&quot; formControlName&#x3D;&quot;selectControl&quot; aria-label&#x3D;&quot;select-order&quot;&gt;
+              &lt;option [selected]&#x3D;&quot;true&quot;&gt;Prix croissant&lt;/option&gt;
+              &lt;option value&#x3D;&quot;1&quot;&gt;Prix décroissant&lt;/option&gt;
+              &lt;option value&#x3D;&quot;2&quot;&gt;Alphabétique&lt;/option&gt;
+              &lt;option value&#x3D;&quot;3&quot;&gt;Alphabétique Z-&gt;A&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;div class&#x3D;&quot;jam-checkbox mb-3&quot;&gt;
+            &lt;div class&#x3D;&quot;form-check&quot;&gt;
+              &lt;input class&#x3D;&quot;form-check-input&quot; formControlName&#x3D;&quot;checkboxIntense&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;intense&quot;&gt;
+              &lt;label class&#x3D;&quot;form-check-label&quot; for&#x3D;&quot;intense&quot;&gt;
+                Intense
+              &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-check&quot;&gt;
+              &lt;input class&#x3D;&quot;form-check-input&quot; formControlName&#x3D;&quot;checkboxConfiture&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;confiture&quot;&gt;
+              &lt;label class&#x3D;&quot;form-check-label&quot; for&#x3D;&quot;confiture&quot;&gt;
+                Confiture
+              &lt;/label&gt;
+            &lt;/div&gt;
+              &lt;div class&#x3D;&quot;form-check&quot;&gt;
+              &lt;input class&#x3D;&quot;form-check-input&quot; formControlName&#x3D;&quot;checkboxGelee&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;gelée&quot;&gt;
+              &lt;label class&#x3D;&quot;form-check-label&quot; for&#x3D;&quot;gelée&quot;&gt;
+                Gelée
+              &lt;/label&gt;
+              &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-check&quot;&gt;
+              &lt;input class&#x3D;&quot;form-check-input&quot; formControlName&#x3D;&quot;checkboxFruitRouge&quot; type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; id&#x3D;&quot;fruit-rouge&quot;&gt;
+              &lt;label class&#x3D;&quot;form-check-label&quot; for&#x3D;&quot;fruit-rouge&quot;&gt;
+                Fruit rouges
+              &lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;button class&#x3D;&quot;btn btn-outline-primary&quot; type&#x3D;&quot;submit&quot;&gt;Filtrer&lt;/button&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col py-3 d-flex flex-column&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div *ngFor&#x3D;&quot;let jam of jams&quot; class&#x3D;&quot;card col-md-auto mx-3 my-3 shadow&quot; style&#x3D;&quot;width: 18rem;&quot;&gt;
+            &lt;img src&#x3D;&quot;./assets/images/{{jam.image}}&quot; class&#x3D;&quot;card-img-top rounded mx-auto d-block mt-1&quot; alt&#x3D;&quot;{{jam.name}}&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+              &lt;h5 class&#x3D;&quot;card-title&quot;&gt;{{jam.name}}&lt;/h5&gt;
+              &lt;p class&#x3D;&quot;card-text&quot;&gt;{{(jam.price/100)| currency: &#x27;EUR&#x27;: &#x27;symbol&#x27;}}&lt;/p&gt;
+              &lt;p class&#x3D;&quot;card-text&quot;&gt;{{jam.description}}&lt;/p&gt;
+              &lt;input type&#x3D;&quot;number&quot; [defaultValue]&#x3D;&quot;1&quot; class&#x3D;&quot;mb-3&quot; #quantity/&gt;
+              &lt;button class&#x3D;&quot;btn btn-dark&quot; (click)&#x3D;&quot;addToCart(jam, quantity.value)&quot;&gt;Ajouter&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  
+  
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./home.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.sidebar {
+    border-right: solid;
+  }
+  
+  .filter-form {
+    width : 100%;
+  }
+  
+  .card-img-top {
+    max-height: 150px;
+    max-width: 150px;
+  }
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container-fluid">    <div class="row flex-nowrap">      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">          <h3 class="filter">Filtrer</h3>          <form [formGroup]="filterForm" class="filter-form">            <div class="mb-3">            <ngx-slider [options]="options" formControlName="sliderControl"></ngx-slider>            </div>            <select class="form-select mb-3" formControlName="selectControl" aria-label="select-order">              <option [selected]="true">Prix croissant</option>              <option value="1">Prix décroissant</option>              <option value="2">Alphabétique</option>              <option value="3">Alphabétique Z->A</option>            </select>            <div class="jam-checkbox mb-3">            <div class="form-check">              <input class="form-check-input" formControlName="checkboxIntense" type="checkbox" value="" id="intense">              <label class="form-check-label" for="intense">                Intense              </label>            </div>            <div class="form-check">              <input class="form-check-input" formControlName="checkboxConfiture" type="checkbox" value="" id="confiture">              <label class="form-check-label" for="confiture">                Confiture              </label>            </div>              <div class="form-check">              <input class="form-check-input" formControlName="checkboxGelee" type="checkbox" value="" id="gelée">              <label class="form-check-label" for="gelée">                Gelée              </label>              </div>                <div class="form-check">              <input class="form-check-input" formControlName="checkboxFruitRouge" type="checkbox" value="" id="fruit-rouge">              <label class="form-check-label" for="fruit-rouge">                Fruit rouges              </label>                </div>            </div>            <button class="btn btn-outline-primary" type="submit">Filtrer</button>          </form>        </div>      </div>      <div class="col py-3 d-flex flex-column">        <div class="row">          <div *ngFor="let jam of jams" class="card col-md-auto mx-3 my-3 shadow" style="width: 18rem;">            <img src="./assets/images/{{jam.image}}" class="card-img-top rounded mx-auto d-block mt-1" alt="{{jam.name}}">            <div class="card-body">              <h5 class="card-title">{{jam.name}}</h5>              <p class="card-text">{{(jam.price/100)| currency: \'EUR\': \'symbol\'}}</p>              <p class="card-text">{{jam.description}}</p>              <input type="number" [defaultValue]="1" class="mb-3" #quantity/>              <button class="btn btn-dark" (click)="addToCart(jam, quantity.value)">Ajouter</button>            </div>          </div>        </div>      </div>    </div>  </div>        </div>'
+    var COMPONENTS = [{'name': 'AHeaderComponent', 'selector': 'app-a-header'},{'name': 'ALayoutComponent', 'selector': 'app-a-layout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'PHeaderComponent', 'selector': 'app-p-header'},{'name': 'PLayoutComponent', 'selector': 'app-p-layout'},{'name': 'ProductAddComponent', 'selector': 'app-product-add'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductEditComponent', 'selector': 'app-product-edit'},{'name': 'ProductIndexComponent', 'selector': 'app-product-index'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserIndexComponent', 'selector': 'app-user-index'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

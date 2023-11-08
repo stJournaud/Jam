@@ -1,0 +1,10 @@
+.container {
+    border: solid 1px rgb(128, 128, 128, 50%);
+    border-radius: 1%;
+}
+
+.img {
+    max-width: 50px;
+    max-height: 50px;
+}
+

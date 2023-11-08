@@ -5,41 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0d4b0be-2c73-4b23-841a-bec2b0d80a5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Jam-BackEnd/config/packages/api_platform.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-BackEnd/config/packages/nelmio_cors.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-BackEnd/config/routes/api_platform.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-BackEnd/src/ApiResource/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/cart/services/cart.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/cart/services/cart.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/checkout/services/checkout.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/checkout/services/checkout.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/home/services/home.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/home/services/home.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/login/service/login.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/login/service/login.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/models/category.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/models/line-order.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/models/order.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/models/product.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/models/user.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/registration/services/registration.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/registration/services/registration.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/.env" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/LineOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/LineOrder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-BackEnd/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-BackEnd/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-Frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jam-Frontend/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Jam-Frontend/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +22,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ApiPlatform-integration" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -240,31 +211,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
-    &quot;database.data.extractors.current.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ApiPlatform-integration&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/reach/OneDrive/Bureau/Documents Diplome/Jam&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "JSON-Groovy.json.groovy",
+    "database.data.extractors.current.id": "JSON-Groovy.json.groovy",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/reach/OneDrive/Bureau/Documents Diplome/Jam",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\reach\\OneDrive\\Bureau\\Documents Diplome\\Jam\\Jam-Frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/Jam-BackEnd/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
@@ -284,8 +256,17 @@
       <workItem from="1698237304429" duration="4974000" />
       <workItem from="1698313372315" duration="1049000" />
       <workItem from="1698314439985" duration="8542000" />
-      <workItem from="1698389189219" duration="3189000" />
+      <workItem from="1698389189219" duration="4213000" />
     </task>
+    <task id="LOCAL-00001" summary="Angular &amp; ApiPlatform">
+      <option name="closed" value="true" />
+      <created>1698395053273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698395053273</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,5 +274,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Angular &amp; ApiPlatform" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular &amp; ApiPlatform" />
   </component>
 </project>

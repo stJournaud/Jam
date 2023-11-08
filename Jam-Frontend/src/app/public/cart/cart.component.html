@@ -1,0 +1,39 @@
+<div *ngIf="!products" class="container-fluid mx-3 my-3">
+  <h2>Le panier est vide.</h2>
+</div>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-6">
+      <h2 class="mx-3 mt-3"><b>Panier</b></h2>
+      <hr>
+      <table *ngIf="products" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let product of products; let i=index">
+          <tr>
+            <th scope="row">{{i+1}}</th>
+            <td><img src="./assets/images/{{product.image}}" class="img rounded" alt="{{product.name}}"></td>
+            <td>{{product.name}}</td>
+            <td>{{product.price /100}} €</td>
+            <td>{{product.quantity}}</td>
+            <td>{{(product.price * product.quantity) / 100}} €</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 text-center">
+      <h2 class="mx-3 mt-3"><b>Synthèse</b></h2>
+      <hr>
+      <h4 class="mt-3">Total : {{totalPrice / 100 | currency: 'EUR': 'symbol'}}</h4>
+      <button class="btn btn-dark mt-3" (click)="onCheckout()">VALIDER LE PANIER</button>
+    </div>
+  </div>
+</div>

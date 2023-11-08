@@ -3,25 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { RegistrationComponent } from './registration/registration.component';
 import {NgxSliderModule} from "ngx-slider-v2";
 import {ReactiveFormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
+import { HttpClientModule} from "@angular/common/http";
+import { ErrorComponent } from './_utils/error/error.component';
+import { TokenInterceptorProvider } from './_helpers/token.interceptor';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    CartComponent,
-    CheckoutComponent,
-    HomeComponent,
-    LoginComponent,
-    RegistrationComponent
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +21,9 @@ import {HttpClientModule} from "@angular/common/http";
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    TokenInterceptorProvider
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

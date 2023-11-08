@@ -1,0 +1,42 @@
+    <div class="container">
+      
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="card shadow bg-secondary-subtle">
+            <div class="goBack">
+              <button type="button" class="btn btn-outline-dark" routerLink="../.."><i class="bi bi-x"></i></button>
+            </div>
+            <div class="card-title text-center border-bottom">
+              <h2 class="p-3">Login</h2>
+            </div>
+            <div class="card-body">
+              <form name="loginForm" 
+                    #f="ngForm"
+                    (ngSubmit)="f.form.valid && onSubmitForm()">
+                <div class="mb-4">
+                  <label for="email">Email</label>
+                  <input type="text" class="form-control" [(ngModel)]="loginForm.email" name="email" id="email" placeholder="name@example.com" #email="ngModel" required/>
+                  <div *ngIf="email.errors && f.submitted" id="passwordHelpBlock" class="form-text text-danger">
+                    Email requis
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <label for="password">Mot de passe</label>
+                  <input type="password" class="form-control" [(ngModel)]="loginForm.password" name="password" id="password" #password="ngModel" required/>
+                  <div *ngIf="password.errors && f.submitted" id="passwordHelpBlock" class="form-text text-danger">
+                    Mot de passe requis
+                  </div>
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-outline-dark main-bg">Login</button>
+                </div>
+              </form>
+              <div class="text-center mt-4">
+                <p>Pas encore membre ? <a routerLink="../register">S'enregistrer</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
