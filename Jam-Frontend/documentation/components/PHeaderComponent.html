@@ -142,7 +142,10 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#items$" >items$</a>
+                                <a href="#isLogged" >isLogged</a>
+                            </li>
+                            <li>
+                                <a href="#itemsQuantity$" >itemsQuantity$</a>
                             </li>
                         </ul>
                     </td>
@@ -156,6 +159,9 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
@@ -177,12 +183,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(homeService: <a href="../injectables/HomeService.html" target="_self">HomeService</a>)</code>
+<code>constructor(cartService: <a href="../injectables/CartService.html" target="_self">CartService</a>, tokenService: <a href="../injectables/TokenService.html" target="_self">TokenService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/public/p-header/p-header.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/public/p-header/p-header.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -200,10 +206,22 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>homeService</td>
+                                                        <td>cartService</td>
                                                   
                                                         <td>
-                                                                        <code><a href="../injectables/HomeService.html" target="_self" >HomeService</a></code>
+                                                                        <code><a href="../injectables/CartService.html" target="_self" >CartService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tokenService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TokenService.html" target="_self" >TokenService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -233,6 +251,43 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="22"
+                                    class="link-to-prism">src/app/public/p-header/p-header.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="ngOnInit"></a>
                     <span class="name">
                         <span ><b>ngOnInit</b></span>
@@ -249,8 +304,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="14"
-                                    class="link-to-prism">src/app/public/p-header/p-header.component.ts:14</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="18"
+                                    class="link-to-prism">src/app/public/p-header/p-header.component.ts:18</a></div>
                         </td>
                     </tr>
 
@@ -276,21 +331,47 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="items$"></a>
+                    <a name="isLogged"></a>
                     <span class="name">
-                        <span ><b>items$</b></span>
-                        <a href="#items$"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>isLogged</b></span>
+                        <a href="#isLogged"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>this.homeService.items$</code>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/public/p-header/p-header.component.ts:10</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/public/p-header/p-header.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="itemsQuantity$"></a>
+                    <span class="name">
+                        <span ><b>itemsQuantity$</b></span>
+                        <a href="#itemsQuantity$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.cartService.itemsQuantity$</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/public/p-header/p-header.component.ts:11</a></div>
                         </td>
                     </tr>
 
@@ -304,7 +385,8 @@
 
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { HomeService } from &#x27;../home/services/home.service&#x27;;
+import { TokenService } from &#x27;src/app/_services/token.service&#x27;;
+import { CartService } from &#x27;src/app/_services/cart.service&#x27;;
 
 @Component({
   selector: &#x27;app-p-header&#x27;,
@@ -312,12 +394,19 @@ import { HomeService } from &#x27;../home/services/home.service&#x27;;
   styleUrls: [&#x27;./p-header.component.css&#x27;]
 })
 export class PHeaderComponent implements OnInit {
-  items$ &#x3D; this.homeService.items$;
-  
-  constructor(private homeService: HomeService) { }
+  itemsQuantity$ &#x3D; this.cartService.itemsQuantity$
+
+  isLogged!: boolean;
+
+  constructor(private cartService: CartService,
+    private tokenService: TokenService) { }
 
   ngOnInit(): void {
+    this.isLogged &#x3D; this.tokenService.isLogged();
+  }
 
+  logout(): void {
+    this.tokenService.clearToken();
   }
 }
   
@@ -344,13 +433,16 @@ export class PHeaderComponent implements OnInit {
       &lt;/ul&gt;
       &lt;ul class&#x3D;&quot;navbar-nav ms-auto mt-1&quot;&gt;
         &lt;li class&#x3D;&quot;nav-item&quot;&gt;
-          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-2 mb-2&quot; routerLink&#x3D;&quot;cart&quot;&gt;&lt;i class&#x3D;&quot;bi bi-cart&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;badge text-bg-secondary ms-1&quot;&gt;{{(items$ | async)?.length}}&lt;/span&gt;&lt;/button&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-2 mb-2&quot; routerLink&#x3D;&quot;cart&quot;&gt;&lt;i class&#x3D;&quot;bi bi-cart&quot;&gt;&lt;/i&gt;&lt;span class&#x3D;&quot;badge text-bg-secondary ms-1&quot;&gt;{{itemsQuantity$ | async}}&lt;/span&gt;&lt;/button&gt;
         &lt;/li&gt;
-        &lt;li class&#x3D;&quot;nav-item&quot;&gt;
-          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-2 mb-2&quot; routerLink&#x3D;&quot;login&quot;&gt;Connexion&lt;/button&gt;
+        &lt;li *ngIf&#x3D;&quot;!isLogged&quot; class&#x3D;&quot;nav-item&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-2 mb-2&quot; routerLink&#x3D;&quot;auth/login&quot;&gt;Connexion&lt;/button&gt;
         &lt;/li&gt;
-        &lt;li class&#x3D;&quot;nav-item&quot;&gt;
-          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-3&quot; routerLink&#x3D;&quot;register&quot;&gt;S&#x27;enregistrer&lt;/button&gt;
+        &lt;li *ngIf&#x3D;&quot;!isLogged&quot; class&#x3D;&quot;nav-item&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-3&quot; routerLink&#x3D;&quot;auth/register&quot;&gt;S&#x27;enregistrer&lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li *ngIf&#x3D;&quot;isLogged&quot; class&#x3D;&quot;nav-item&quot;&gt;
+          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark me-3&quot;&gt;Déconnexion&lt;/button&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
@@ -406,8 +498,8 @@ export class PHeaderComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-expand-md navbar-dark bg-light">  <div class="container-fluid">    <form class="search abs d-flex" role="search">      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">      <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>    </form>    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">      <span class="navbar-toggler-icon"></span>    </button>    <div class="navbar-collapse collapse" id="collapseNavbar">      <ul class="navbar-nav">        <li class="nav-item active">          <a class="navbar-brand text-dark" routerLink="/home">Shop</a>        </li>      </ul>      <ul class="navbar-nav ms-auto mt-1">        <li class="nav-item">          <button type="button" class="btn btn-outline-dark me-2 mb-2" routerLink="cart"><i class="bi bi-cart"></i><span class="badge text-bg-secondary ms-1">{{(items$ | async)?.length}}</span></button>        </li>        <li class="nav-item">          <button type="button" class="btn btn-outline-dark me-2 mb-2" routerLink="login">Connexion</button>        </li>        <li class="nav-item">          <button type="button" class="btn btn-outline-dark me-3" routerLink="register">S\'enregistrer</button>        </li>      </ul>    </div>  </div></nav></div>'
-    var COMPONENTS = [{'name': 'AHeaderComponent', 'selector': 'app-a-header'},{'name': 'ALayoutComponent', 'selector': 'app-a-layout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'PHeaderComponent', 'selector': 'app-p-header'},{'name': 'PLayoutComponent', 'selector': 'app-p-layout'},{'name': 'ProductAddComponent', 'selector': 'app-product-add'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductEditComponent', 'selector': 'app-product-edit'},{'name': 'ProductIndexComponent', 'selector': 'app-product-index'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserIndexComponent', 'selector': 'app-user-index'}];
+        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-expand-md navbar-dark bg-light">  <div class="container-fluid">    <form class="search abs d-flex" role="search">      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">      <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>    </form>    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">      <span class="navbar-toggler-icon"></span>    </button>    <div class="navbar-collapse collapse" id="collapseNavbar">      <ul class="navbar-nav">        <li class="nav-item active">          <a class="navbar-brand text-dark" routerLink="/home">Shop</a>        </li>      </ul>      <ul class="navbar-nav ms-auto mt-1">        <li class="nav-item">          <button type="button" class="btn btn-outline-dark me-2 mb-2" routerLink="cart"><i class="bi bi-cart"></i><span class="badge text-bg-secondary ms-1">{{itemsQuantity$ | async}}</span></button>        </li>        <li *ngIf="!isLogged" class="nav-item">          <button type="button" class="btn btn-outline-dark me-2 mb-2" routerLink="auth/login">Connexion</button>        </li>        <li *ngIf="!isLogged" class="nav-item">          <button type="button" class="btn btn-outline-dark me-3" routerLink="auth/register">S\'enregistrer</button>        </li>        <li *ngIf="isLogged" class="nav-item">          <button type="button" class="btn btn-outline-dark me-3">Déconnexion</button>        </li>      </ul>    </div>  </div></nav></div>'
+    var COMPONENTS = [{'name': 'AHeaderComponent', 'selector': 'app-a-header'},{'name': 'ALayoutComponent', 'selector': 'app-a-layout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PHeaderComponent', 'selector': 'app-p-header'},{'name': 'PLayoutComponent', 'selector': 'app-p-layout'},{'name': 'ProductAddComponent', 'selector': 'app-product-add'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductEditComponent', 'selector': 'app-product-edit'},{'name': 'ProductIndexComponent', 'selector': 'app-product-index'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserIndexComponent', 'selector': 'app-user-index'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PHeaderComponent'};
 </script>

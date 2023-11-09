@@ -11,11 +11,12 @@ import { CartService } from 'src/app/_services/cart.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private productService: ProductService, private cartService: CartService) { }
   jams:Product[] = [];
   cartProducts:Product[] = [];
   minValue :number = 0;
   maxValue :number = 0;
+  
+  constructor(private productService: ProductService, private cartService: CartService) { }
 
   ngOnInit(): void {
       this.GetAllProducts()

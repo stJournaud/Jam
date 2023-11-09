@@ -2,7 +2,11 @@
     <div class="row flex-nowrap">
       <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-light">
         <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2  min-vh-100">
-          <h3 class="filter">Filtrer</h3>
+          <form class="search abs d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" #filter>
+            <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+          <h4 class="filter mt-4">Filtrer</h4>
           <form [formGroup]="filterForm" class="filter-form">
             <div class="mb-3">
             <ngx-slider [options]="options" formControlName="sliderControl"></ngx-slider>

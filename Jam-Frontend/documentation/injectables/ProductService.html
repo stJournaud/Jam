@@ -28,108 +28,50 @@
                    <compodoc-menu mode="normal"></compodoc-menu>
                </div>
                <!-- START CONTENT -->
-               <div class="content component">
+               <div class="content injectable">
                    <div class="content-data">
 
 
 
 
+
+
+
+
 <ol class="breadcrumb">
-  <li class="breadcrumb-item">Components</li>
-  <li class="breadcrumb-item"
-  >
-  ProductEditComponent</li>
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >ProductService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-            <a href="#info" class="nav-link active"
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
                 role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
         </li>
         <li class="nav-item">
-            <a href="#source" class="nav-link"
+            <a href="#source" 
+                class="nav-link"
+                
                 role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
-        </li>
-        <li class="nav-item">
-            <a href="#templateData" class="nav-link"
-                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
-        </li>
-        <li class="nav-item">
-            <a href="#styleData" class="nav-link"
-                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
-        </li>
-        <li class="nav-item">
-            <a href="#tree" class="nav-link"
-                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
         </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info"><p class="comment">
-    <h3>File</h3>
-</p>
-<p class="comment">
-    <code>src/app/admin/product/product-edit/product-edit.component.ts</code>
-</p>
-
-
-
-
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                <code>OnInit</code>
-    </p>
-
-
-<section data-compodoc="block-metadata">
-    <h3>Metadata</h3>
-    <table class="table table-sm table-hover metadata">
-        <tbody>
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/_services/product.service.ts</code>
+        </p>
 
 
 
 
 
-
-
-
-
-
-
-
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-product-edit</code></td>
-            </tr>
-
-
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>./product-edit.component.css</code></td>
-            </tr>
-
-
-
-            <tr>
-                <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./product-edit.component.html</code></td>
-            </tr>
-
-
-
-
-
-
-
-
-        </tbody>
-    </table>
-</section>
-
-    <section data-compodoc="block-index">
+            <section data-compodoc="block-index">
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
@@ -143,7 +85,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#ngOnInit" >ngOnInit</a>
+                                <a href="#getAllProducts" >getAllProducts</a>
                             </li>
                         </ul>
                     </td>
@@ -157,18 +99,18 @@
     </table>
 </section>
 
-    <section data-compodoc="block-constructor">
+            <section data-compodoc="block-constructor">
     <h3 id="constructor">Constructor</h3>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(activated: ActivatedRoute)</code>
+<code>constructor(httpClient: HttpClient)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/admin/product/product-edit/product-edit.component.ts:9</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/_services/product.service.ts:9</a></div>
                             </td>
                         </tr>
 
@@ -186,10 +128,10 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>activated</td>
+                                                        <td>httpClient</td>
                                                   
                                                         <td>
-                                                                    <code>ActivatedRoute</code>
+                                                                    <code>HttpClient</code>
                                                         </td>
                                                   
                                                     <td>
@@ -206,11 +148,7 @@
         </table>
 </section>
 
-
-
-
-
-    <section data-compodoc="block-methods">
+            <section data-compodoc="block-methods">
     
     <h3 id="methods">
         Methods
@@ -219,24 +157,24 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="ngOnInit"></a>
+                    <a name="getAllProducts"></a>
                     <span class="name">
-                        <span ><b>ngOnInit</b></span>
-                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getAllProducts</b></span>
+                        <a href="#getAllProducts"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>ngOnInit()</code>
+<code>getAllProducts()</code>
                 </td>
             </tr>
 
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="12"
-                                    class="link-to-prism">src/app/admin/product/product-edit/product-edit.component.ts:12</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="13"
+                                    class="link-to-prism">src/app/_services/product.service.ts:13</a></div>
                         </td>
                     </tr>
 
@@ -245,7 +183,7 @@
                 <td class="col-md-4">
 
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                            <b>Returns : </b>        <code><a href="../classes/Product.html" target="_self" >Observable&lt;Product[]&gt;</a></code>
 
                         </div>
                 </td>
@@ -254,77 +192,30 @@
     </table>
 </section>
 
-</div>
+    </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { Product } from &#x27;../models/product.model&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
 
-@Component({
-  selector: &#x27;app-product-edit&#x27;,
-  templateUrl: &#x27;./product-edit.component.html&#x27;,
-  styleUrls: [&#x27;./product-edit.component.css&#x27;]
+@Injectable({
+  providedIn: &#x27;root&#x27;
 })
-export class ProductEditComponent implements OnInit {
-  constructor(private activated: ActivatedRoute){}
+export class ProductService {
 
-  ngOnInit(): void {
-    this.activated.params.subscribe(params &#x3D;&gt; {
-      console.log(params);
-    });
+  constructor(private httpClient: HttpClient) { }
+
+  getAllProducts(): Observable&lt;Product[]&gt; {;
+    return this.httpClient.get&lt;Product[]&gt;(&quot;http://localhost:8000/api/products.json?page&#x3D;1&quot;);
   }
 }
 </code></pre>
     </div>
 
-    <div class="tab-pane fade " id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;product-edit works!&lt;/p&gt;
-</code></pre>
-    </div>
-
-    <div class="tab-pane fade " id="styleData">
-                <p class="comment">
-                    <code>./product-edit.component.css</code>
-                </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
-    </div>
-
-    <div class="tab-pane fade " id="tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
-            </div>
-        </div>
-    </div>
-
-    
 </div>
-
-<script src="../js/libs/vis.min.js"></script>
-<script src="../js/libs/htmlparser.js"></script>
-<script src="../js/libs/deep-iterator.js"></script>
-<script>
-        var COMPONENT_TEMPLATE = '<div><p>product-edit works!</p></div>'
-    var COMPONENTS = [{'name': 'AHeaderComponent', 'selector': 'app-a-header'},{'name': 'ALayoutComponent', 'selector': 'app-a-layout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PHeaderComponent', 'selector': 'app-p-header'},{'name': 'PLayoutComponent', 'selector': 'app-p-layout'},{'name': 'ProductAddComponent', 'selector': 'app-product-add'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductEditComponent', 'selector': 'app-product-edit'},{'name': 'ProductIndexComponent', 'selector': 'app-product-index'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserIndexComponent', 'selector': 'app-user-index'}];
-    var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'ProductEditComponent'};
-</script>
-<script src="../js/tree.js"></script>
-
-
-
-
 
 
 
@@ -363,8 +254,8 @@ export class ProductEditComponent implements OnInit {
 
        <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
-            var COMPODOC_CURRENT_PAGE_URL = 'ProductEditComponent.html';
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProductService.html';
             var MAX_SEARCH_RESULTS = 15;
        </script>
 

@@ -229,6 +229,7 @@ import { ALayoutComponent } from &#x27;./a-layout/a-layout.component&#x27;;
 import { DashboardComponent } from &#x27;./dashboard/dashboard.component&#x27;;
 import { SideMenuComponent } from &#x27;./side-menu/side-menu.component&#x27;;
 import { AHeaderComponent } from &#x27;./a-header/a-header.component&#x27;;
+import { HttpClientModule } from &#x27;@angular/common/http&#x27;;
 
 
 @NgModule({
@@ -240,7 +241,8 @@ import { AHeaderComponent } from &#x27;./a-header/a-header.component&#x27;;
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    HttpClientModule
   ]
 })
 export class AdminModule { }

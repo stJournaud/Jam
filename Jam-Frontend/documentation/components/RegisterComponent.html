@@ -149,15 +149,53 @@ export class RegisterComponent {
     </div>
 
     <div class="tab-pane fade " id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;p&gt;register works!&lt;/p&gt;
-</code></pre>
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row justify-content-center mt-5&quot;&gt;
+      &lt;div class&#x3D;&quot;col-lg-4 col-md-6 col-sm-6&quot;&gt;
+        &lt;div class&#x3D;&quot;card shadow bg-secondary-subtle&quot;&gt;
+          &lt;div class&#x3D;&quot;goBack&quot;&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-dark&quot; routerLink&#x3D;&quot;../..&quot;&gt;&lt;i class&#x3D;&quot;bi bi-x&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-title text-center border-bottom&quot;&gt;
+            &lt;h2 class&#x3D;&quot;p-3&quot;&gt;Register&lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;form&gt;
+              &lt;div class&#x3D;&quot;mb-4&quot;&gt;
+                &lt;label for&#x3D;&quot;username&quot; class&#x3D;&quot;form-label&quot;&gt;Email&lt;/label&gt;
+                &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;username&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;mb-4&quot;&gt;
+                &lt;label for&#x3D;&quot;password&quot; class&#x3D;&quot;form-label&quot;&gt;Mot de passe&lt;/label&gt;
+                &lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;password&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;mb-4&quot;&gt;
+                &lt;label for&#x3D;&quot;password&quot; class&#x3D;&quot;form-label&quot;&gt;Confirmer mot de passe&lt;/label&gt;
+                &lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;reapeatPassword&quot; /&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;mb-4&quot;&gt;
+                &lt;input type&#x3D;&quot;checkbox&quot; class&#x3D;&quot;form-check-input&quot; id&#x3D;&quot;terms&quot; /&gt;
+                &lt;label for&#x3D;&quot;terms&quot; class&#x3D;&quot;form-label&quot;&gt;Accepter les termes&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;d-grid&quot;&gt;
+                &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-outline-dark main-bg&quot;&gt;S&#x27;enregistrer&lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
     </div>
 
     <div class="tab-pane fade " id="styleData">
                 <p class="comment">
                     <code>./register.component.css</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">.goBack .btn {
+    float: right;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="tree">
@@ -185,8 +223,8 @@ export class RegisterComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><p>register works!</p></div>'
-    var COMPONENTS = [{'name': 'AHeaderComponent', 'selector': 'app-a-header'},{'name': 'ALayoutComponent', 'selector': 'app-a-layout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'PHeaderComponent', 'selector': 'app-p-header'},{'name': 'PLayoutComponent', 'selector': 'app-p-layout'},{'name': 'ProductAddComponent', 'selector': 'app-product-add'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductEditComponent', 'selector': 'app-product-edit'},{'name': 'ProductIndexComponent', 'selector': 'app-product-index'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserIndexComponent', 'selector': 'app-user-index'}];
+        var COMPONENT_TEMPLATE = '<div><div class="container">    <div class="row justify-content-center mt-5">      <div class="col-lg-4 col-md-6 col-sm-6">        <div class="card shadow bg-secondary-subtle">          <div class="goBack">            <button type="button" class="btn btn-outline-dark" routerLink="../.."><i class="bi bi-x"></i></button>          </div>          <div class="card-title text-center border-bottom">            <h2 class="p-3">Register</h2>          </div>          <div class="card-body">            <form>              <div class="mb-4">                <label for="username" class="form-label">Email</label>                <input type="text" class="form-control" id="username" />              </div>              <div class="mb-4">                <label for="password" class="form-label">Mot de passe</label>                <input type="password" class="form-control" id="password" />              </div>              <div class="mb-4">                <label for="password" class="form-label">Confirmer mot de passe</label>                <input type="password" class="form-control" id="reapeatPassword" />              </div>              <div class="mb-4">                <input type="checkbox" class="form-check-input" id="terms" />                <label for="terms" class="form-label">Accepter les termes</label>              </div>              <div class="d-grid">                <button type="submit" class="btn btn-outline-dark main-bg">S\'enregistrer</button>              </div>            </form>          </div>        </div>      </div>    </div>  </div>  </div>'
+    var COMPONENTS = [{'name': 'AHeaderComponent', 'selector': 'app-a-header'},{'name': 'ALayoutComponent', 'selector': 'app-a-layout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CartComponent', 'selector': 'app-cart'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PHeaderComponent', 'selector': 'app-p-header'},{'name': 'PLayoutComponent', 'selector': 'app-p-layout'},{'name': 'ProductAddComponent', 'selector': 'app-product-add'},{'name': 'ProductDeleteComponent', 'selector': 'app-product-delete'},{'name': 'ProductEditComponent', 'selector': 'app-product-edit'},{'name': 'ProductIndexComponent', 'selector': 'app-product-index'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SideMenuComponent', 'selector': 'app-side-menu'},{'name': 'UserAddComponent', 'selector': 'app-user-add'},{'name': 'UserDeleteComponent', 'selector': 'app-user-delete'},{'name': 'UserEditComponent', 'selector': 'app-user-edit'},{'name': 'UserIndexComponent', 'selector': 'app-user-index'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RegisterComponent'};
 </script>
