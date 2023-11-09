@@ -9,6 +9,7 @@ use App\Repository\ProductRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
@@ -17,12 +18,13 @@ class CategoryController extends AbstractController
 {
 
    #[Route('/category/{slug}', name: 'category')]
-    public function index(Category $category): Response
+    public function index(Category $category): JsonResponse
     {
         $products = $category->getProducts();
-        return $this->render('home/index.html.twig', [
+       /* return $this->render('home/index.html.twig', [
             "products"=>$products
             
-        ]);
+        ]);*/
+        return new JsonResponse(["code" => 200, "products" => $products]);
     }
 }

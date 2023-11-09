@@ -2,16 +2,13 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Metadata\ApiResource;
 use App\Repository\OrderRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: OrderRepository::class)]
 #[ORM\Table(name: '`order`')]
-#[ApiResource]
 class Order
 {
     #[ORM\Id]
@@ -20,19 +17,15 @@ class Order
     private $id;
 
     #[ORM\Column(type: 'datetime')]
-    #[Assert\NotBlank]
     private $datetime;
 
     #[ORM\Column(type: 'float')]
-    #[Assert\NotBlank]
     private $total;
 
     #[ORM\OneToMany(mappedBy: 'order_associated', targetEntity: LineOrder::class, cascade: ["persist"])]
-    #[Assert\NotBlank]
     private $lineOrders;
 
     #[ORM\Column(type: 'string', length: 255)]
-    #[Assert\NotBlank]
     private $status;
 
     public function __construct()
